@@ -93,6 +93,7 @@ public class BookDao {
             ps.setInt(3, book.getTheloai_id());
             ps.setInt(4, book.getNxb_id());
             ps.setFloat(5, book.getGiaban());
+            ps.setInt(6, book.getId());
             output = ps.executeUpdate();
             ps.close();
         } catch (SQLException e) {

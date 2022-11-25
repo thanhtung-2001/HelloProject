@@ -69,9 +69,6 @@ public class BookController extends HttpServlet {
                 b.setNxb_id(Integer.parseInt(request.getParameter("nxb_id")));
                 b.setGiaban(Float.parseFloat(request.getParameter("giaban")));
                 NhaXuatBan n = new NhaXuatBan();
-                n.setId(Integer.parseInt(request.getParameter("id")));
-                n.setTen(request.getParameter("ten"));
-                b.setNhaXuatBan(n);
                 bookDao.add(b);
                 break;
             case "update":
